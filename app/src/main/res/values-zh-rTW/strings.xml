@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">新聞</string>
+
+    <string name="open_in">用瀏覽器開啟</string>
+
+    <string name="page_size">數量</string>
+    <string name="setting">設定</string>
+    <string name="cancel">取消</string>
+    <string name="clean_cache">清除快取</string>
+    <string name="show_image">顯示圖片</string>
+
+    <string name="category">分類</string>
+    <string name="general">一般</string>
+    <string name="business">商業</string>
+    <string name="entertainment">娛樂</string>
+    <string name="health">健康</string>
+    <string name="sports">運動</string>
+    <string name="science">科學</string>
+    <string name="technology">科技</string>
+
+    <array name="select_lang">
+        <item>手機</item>
+        <item>IP 位置</item>
+        <item>自選</item>
+    </array>
+
+</resources>

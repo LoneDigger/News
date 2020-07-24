@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">News</string>
+
+    <string name="category">Category</string>
+
+    <string name="open_in">Open in Browser</string>
+
+    <string name="page_size">Page size</string>
+    <string name="setting">Setting</string>
+    <string name="cancel">Cancel</string>
+    <string name="clean_cache">Clean cache</string>
+    <string name="show_image">Show images</string>
+
+    <string-array name="arrays">
+        <item>general</item>
+        <item>business</item>
+        <item>entertainment</item>
+        <item>health</item>
+        <item>sports</item>
+        <item>science</item>
+        <item>technology</item>
+    </string-array>
+
+    <string-array name="cate">
+        <item>@string/general</item>
+        <item>@string/business</item>
+        <item>@string/entertainment</item>
+        <item>@string/health</item>
+        <item>@string/sports</item>
+        <item>@string/science</item>
+        <item>@string/technology</item>
+    </string-array>
+
+    <string name="general">General</string>
+    <string name="business">Business</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="health">Health</string>
+    <string name="sports">Sports</string>
+    <string name="science">Science</string>
+    <string name="technology">Technology</string>
+
+</resources>

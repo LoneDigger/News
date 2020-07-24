@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_background">#222730</color>
+    <color name="news_background">#3a4251</color>
+    <color name="menu_background">#484848</color>
+
+    <color name="divide">#F5F0ED</color>
+
+    <color name="title_color">#f0f0f0</color>
+    <color name="text_color">#e8e8e8</color>
+
+    <color name="gray_5a">#5a5a5a</color>
+
+    <color name="flow_color">#333030</color>
+
+    <integer-array name="colors">
+        <item>@android:color/holo_red_dark</item>
+        <item>@android:color/holo_orange_dark</item>
+        <item>@android:color/holo_green_dark</item>
+        <item>@android:color/holo_blue_dark</item>
+    </integer-array>
+
+</resources>

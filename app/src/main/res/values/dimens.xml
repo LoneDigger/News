@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="zero">0dp</dimen>
+
+    <dimen name="one">1dp</dimen>
+
+    <dimen name="title_padding">9dp</dimen>
+
+    <dimen name="setting_padding">12dp</dimen>
+
+    <dimen name="flow_margin">9dp</dimen>
+
+    <dimen name="item_padding">5dp</dimen>
+    <dimen name="menu_padding">8dp</dimen>
+    <dimen name="view_padding">2dp</dimen>
+
+    <dimen name="item_press_padding">3dp</dimen>
+    <dimen name="item_press_radius">5dp</dimen>
+    <dimen name="item_news_padding">3dp</dimen>
+
+    <dimen name="title_font">32sp</dimen>
+    <dimen name="text_font">20sp</dimen>
+    <dimen name="menu_font">23sp</dimen>
+</resources>

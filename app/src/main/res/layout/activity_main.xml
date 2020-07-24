@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background">
+
+    <ImageView
+            android:id="@+id/backView"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:onClick="show"
+            android:padding="@dimen/title_padding"
+            app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/titleTextView"
+            app:layout_constraintHorizontal_weight="15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_menu" />
+
+    <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/zero"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/title_font"
+            app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+            app:layout_constraintEnd_toStartOf="@+id/settingView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="70"
+            app:layout_constraintStart_toEndOf="@+id/backView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+            android:id="@+id/settingView"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:onClick="setting"
+            android:padding="@dimen/title_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="15"
+            app:layout_constraintStart_toEndOf="@+id/titleTextView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:srcCompat="@drawable/ic_settings" />
+
+    <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/zero"
+            android:padding="@dimen/view_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backView">
+
+        <include
+                layout="@layout/layout_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="@dimen/flow_margin"
+                android:src="@drawable/ic_top"
+                app:backgroundTint="@color/flow_color"
+                app:fabSize="normal" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>

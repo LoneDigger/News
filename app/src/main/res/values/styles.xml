@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="menu_style">
+        <item name="android:textSize">@dimen/menu_font</item>
+        <item name="android:padding">@dimen/menu_padding</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <style name="title_style">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+
+    <style name="text_style">
+        <item name="android:textSize">@dimen/text_font</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+
+</resources>

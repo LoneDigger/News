@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background">
+
+    <ImageView
+            android:id="@+id/backView"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:onClick="back"
+            android:padding="@dimen/title_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nTextView"
+            app:layout_constraintHorizontal_weight="15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+            android:id="@+id/nTextView"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/zero"
+            android:gravity="center|left"
+            android:text="@string/app_name"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/title_font"
+            app:layout_constraintBottom_toBottomOf="@+id/backView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="85"
+            app:layout_constraintStart_toEndOf="@+id/backView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backView">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/titleTextView"
+                        style="@style/title_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/view_padding" />
+
+                <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter" />
+
+                <TextView
+                        android:id="@+id/textView"
+                        style="@style/text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/view_padding" />
+
+                <TextView
+                        android:id="@+id/dateTextView"
+                        style="@style/text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|right" />
+
+                <TextView
+                        android:id="@+id/fromTextView"
+                        style="@style/text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|right" />
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="@dimen/flow_margin"
+                android:src="@drawable/ic_open"
+                app:backgroundTint="@color/flow_color"
+                app:fabSize="normal" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>

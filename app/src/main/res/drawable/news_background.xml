@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                    android:bottom="@dimen/item_news_padding"
+                    android:left="@dimen/item_news_padding"
+                    android:right="@dimen/item_news_padding"
+                    android:top="@dimen/item_news_padding"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <!--<stroke android:color="#bcad71" android:width="@dimen/one"/>-->
+            <solid android:color="@color/news_background"/>
+        </shape>
+    </item>
+</layer-list>

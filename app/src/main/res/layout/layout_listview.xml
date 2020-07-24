@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/menu_background"
+        android:orientation="vertical"
+        android:padding="@dimen/one">
+
+    <ListView
+            android:id="@+id/listView"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/zero"
+            app:layout_constraintBottom_toTopOf="@+id/exitView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+            android:id="@+id/exitView"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:onClick="exit"
+            android:src="@drawable/ic_exit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
