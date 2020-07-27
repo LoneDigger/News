@@ -64,6 +64,9 @@ class SettingActivity : AppCompatActivity() {
         finish()
     }
 
+    /**
+     * 清除快取
+     * */
     fun cleanCache(view: View) {
         ImageLoader.getInstance().clearDiskCache()
         ImageLoader.getInstance().clearMemoryCache()

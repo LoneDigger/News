@@ -10,8 +10,7 @@ import org.json.JSONObject
 import java.text.SimpleDateFormat
 import java.util.*
 
-class NewsAsyncTask(private val callback: OnFinishedCallback, private val arrayList: ArrayList<News>) :
-    AsyncTask<String, Void, Boolean>() {
+class NewsAsyncTask(private val callback: OnFinishedCallback, private val arrayList: ArrayList<News>) : AsyncTask<String, Void, Boolean>() {
 
     companion object {
         @SuppressLint("SimpleDateFormat")
@@ -42,7 +41,6 @@ class NewsAsyncTask(private val callback: OnFinishedCallback, private val arrayL
                 arrayList.add(news)
             }
         }
-
         return response.isSuccessful
     }
 

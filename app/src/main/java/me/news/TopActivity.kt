@@ -38,6 +38,7 @@ class TopActivity : AppCompatActivity(), OnFinishedCallback {
 
     //代號
     private lateinit var menu: Array<String>
+
     //語系
     private lateinit var nameMenu: Array<String>
 
@@ -45,8 +46,10 @@ class TopActivity : AppCompatActivity(), OnFinishedCallback {
 
     //閘道
     private var flag = false
+
     //頁
     private var page = 0
+
     //項目
     private lateinit var category: String
 
@@ -67,9 +70,12 @@ class TopActivity : AppCompatActivity(), OnFinishedCallback {
         titleTextView.text = nameMenu[0]
         category = menu[0]
 
+        //載入畫面
         dialog = AlertDialog.Builder(this).setView(R.layout.dialog_process).create()
+        //使用者無法取消
         dialog.setCancelable(false)
         dialog.setCanceledOnTouchOutside(false)
+        //透明背景
         dialog.window.setBackgroundDrawableResource(android.R.color.transparent)
 
         val listView: ListView = menuDrawer.menuView.findViewById(R.id.listView)
@@ -188,16 +194,18 @@ class TopActivity : AppCompatActivity(), OnFinishedCallback {
      * */
     override fun onResult(boolean: Boolean) {
         dialog.hide()
-
-        if (!boolean) {
-            flag = true
-            return
-        }
         flag = false
 
+        if (!boolean) {
+            Toast.makeText(this, "更新失敗", Toast.LENGTH_LONG).show()
+            return
+        }
 
-        if (page == 1)
+        //page = 1，表示有切換新文類型
+        if (page == 1) {
+            //回到最上面
             recyclerView.smoothScrollToPosition(0)
+        }
 
         recyclerView.adapter!!.notifyDataSetChanged()
         swipeRefreshLayout.isRefreshing = false
